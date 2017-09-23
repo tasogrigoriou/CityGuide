@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -71,6 +71,7 @@
                             <constraint firstItem="Y9n-dC-4zW" firstAttribute="top" secondItem="XIM-4z-XU2" secondAttribute="bottom" constant="55.999999999999986" id="sp0-qW-QVn"/>
                             <constraint firstItem="XIM-4z-XU2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="uTq-9R-Ccm"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="epL-2w-6kt"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kro-1d-D6n"/>
                     <connections>
@@ -108,6 +109,7 @@
                             <constraint firstItem="y0K-ka-BRM" firstAttribute="leading" secondItem="JQb-cB-9cX" secondAttribute="leading" id="qVe-Qu-O9c"/>
                             <constraint firstItem="y0K-ka-BRM" firstAttribute="trailing" secondItem="JQb-cB-9cX" secondAttribute="trailing" id="tkS-2E-8uN"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="kZ1-zZ-44Q"/>
                     </view>
                     <navigationItem key="navigationItem" id="6L8-dB-6sR">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="lVp-0W-P5a">
@@ -160,27 +162,31 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapme.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZyI-R4-nf6">
-                                <rect key="frame" x="87" y="304" width="240" height="148"/>
+                                <rect key="frame" x="87" y="326" width="240" height="148"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="zr2-OC-33D"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yTg-wu-8w9" firstAttribute="leading" secondItem="CJq-lV-jDw" secondAttribute="leadingMargin" constant="45" id="0jY-cI-lnG"/>
-                            <constraint firstItem="bHM-kk-07G" firstAttribute="leading" secondItem="CJq-lV-jDw" secondAttribute="leadingMargin" constant="45" id="1tn-G9-9TC"/>
-                            <constraint firstItem="yTg-wu-8w9" firstAttribute="top" secondItem="IMa-KI-qiM" secondAttribute="bottom" constant="19" id="5fV-V1-Txi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZyI-R4-nf6" secondAttribute="trailing" constant="67" id="A9Z-hd-fQt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bHM-kk-07G" secondAttribute="trailing" constant="45" id="RlX-lo-o73"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yTg-wu-8w9" secondAttribute="trailing" constant="45" id="SXR-t5-N11"/>
-                            <constraint firstItem="ZyI-R4-nf6" firstAttribute="leading" secondItem="CJq-lV-jDw" secondAttribute="leadingMargin" constant="67" id="So5-rM-Dic"/>
-                            <constraint firstItem="IMa-KI-qiM" firstAttribute="leading" secondItem="CJq-lV-jDw" secondAttribute="leadingMargin" constant="45" id="ZaH-rS-OtY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IMa-KI-qiM" secondAttribute="trailing" constant="45" id="iUo-NI-fti"/>
-                            <constraint firstItem="ZyI-R4-nf6" firstAttribute="top" secondItem="bHM-kk-07G" secondAttribute="bottom" constant="42" id="tmU-nG-Hrt"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ZyI-R4-nf6" secondAttribute="bottom" constant="284" id="tpb-On-urM"/>
-                            <constraint firstItem="bHM-kk-07G" firstAttribute="top" secondItem="yTg-wu-8w9" secondAttribute="bottom" constant="22" id="tqI-TR-x0r"/>
+                            <constraint firstItem="IMa-KI-qiM" firstAttribute="leading" secondItem="Knb-at-sg3" secondAttribute="leading" constant="65" id="2XH-Jb-2Mq"/>
+                            <constraint firstItem="ZyI-R4-nf6" firstAttribute="top" secondItem="bHM-kk-07G" secondAttribute="bottom" constant="64" id="6yr-ZH-ThQ"/>
+                            <constraint firstItem="Knb-at-sg3" firstAttribute="trailing" secondItem="yTg-wu-8w9" secondAttribute="trailing" constant="65" id="Ba5-pp-hIy"/>
+                            <constraint firstItem="ZyI-R4-nf6" firstAttribute="leading" secondItem="Knb-at-sg3" secondAttribute="leading" constant="87" id="C9s-kl-mCO"/>
+                            <constraint firstItem="yTg-wu-8w9" firstAttribute="leading" secondItem="Knb-at-sg3" secondAttribute="leading" constant="65" id="Da6-aN-Svc"/>
+                            <constraint firstItem="Knb-at-sg3" firstAttribute="bottom" secondItem="ZyI-R4-nf6" secondAttribute="bottom" constant="262" id="Ejv-NW-Yni"/>
+                            <constraint firstItem="bHM-kk-07G" firstAttribute="leading" secondItem="Knb-at-sg3" secondAttribute="leading" constant="65" id="T1m-tS-k6R"/>
+                            <constraint firstItem="Knb-at-sg3" firstAttribute="trailing" secondItem="IMa-KI-qiM" secondAttribute="trailing" constant="65" id="bFf-GY-tqt"/>
+                            <constraint firstItem="Knb-at-sg3" firstAttribute="trailing" secondItem="bHM-kk-07G" secondAttribute="trailing" constant="65" id="dfg-zh-YGN"/>
+                            <constraint firstItem="Knb-at-sg3" firstAttribute="trailing" secondItem="ZyI-R4-nf6" secondAttribute="trailing" constant="87" id="jHY-0s-xB0"/>
+                            <constraint firstItem="yTg-wu-8w9" firstAttribute="top" secondItem="IMa-KI-qiM" secondAttribute="bottom" constant="19" id="ohd-8i-xkQ"/>
+                            <constraint firstItem="IMa-KI-qiM" firstAttribute="top" secondItem="Knb-at-sg3" secondAttribute="top" constant="67" id="rsk-Gl-1bR"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Knb-at-sg3"/>
                     </view>
                     <navigationItem key="navigationItem" id="wie-bf-H2x">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="p4p-lr-0VB">
@@ -221,6 +227,7 @@
                             <constraint firstItem="VCe-Bf-3a7" firstAttribute="leading" secondItem="KaW-CQ-u9b" secondAttribute="leading" id="Tjf-O2-yDg"/>
                             <constraint firstAttribute="trailing" secondItem="VCe-Bf-3a7" secondAttribute="trailing" id="abM-BO-Nji"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Rc-HF-8Cw"/>
                     </view>
                     <navigationItem key="navigationItem" id="TTU-Te-7N2">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="glq-Gj-KVy">
@@ -309,6 +316,7 @@
                             <constraint firstItem="jxP-s0-5hU" firstAttribute="leading" secondItem="9bv-sd-t6v" secondAttribute="leading" id="tvX-T7-fcC"/>
                             <constraint firstAttribute="bottom" secondItem="jxP-s0-5hU" secondAttribute="bottom" id="ztx-Ml-t7e"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="xdB-kj-WfJ"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="jxP-s0-5hU" id="nw1-6a-FBs"/>
@@ -381,6 +389,7 @@
         <image name="tapme.png" width="243" height="148"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="NPj-6r-Bdh"/>
         <segue reference="tNJ-nf-dtr"/>
     </inferredMetricsTieBreakers>
 </document>
